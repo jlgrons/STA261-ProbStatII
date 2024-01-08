@@ -25,3 +25,5 @@ for (i in 1:100){
 
 abline(h = 0.5, col = "red")
 abline(h = c(0.4, 0.6), col = "green")
+
+# You can make fancier plots with ggplot (https://ggplot2.tidyverse.org).
