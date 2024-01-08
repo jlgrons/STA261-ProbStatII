@@ -9,9 +9,15 @@ p <- 0.5
 toss_results <- rbinom(n_tosses, 1, p)
 
 # Calculate the rolling sum for each n.
-xbar_for_each_n <- cumsum(toss_results) / (1:n_tosses)
+phat_for_each_n <- cumsum(toss_results) / (1:n_tosses)
+
+# Take a look at results.
+head(cbind(1:n_tosses,
+      toss_results,
+      phat_for_each_n))
+
 # Plot results.
-plot(1:n_tosses, xbar_for_each_n, 
+plot(1:n_tosses, phat_for_each_n, 
      ylim = c(0, 1), type = "l")
 abline(h = 0.5, col = "red")
 
