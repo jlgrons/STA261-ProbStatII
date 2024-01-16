@@ -51,6 +51,6 @@ pnorm(1.2, mean = 1.5, sd = sqrt(1/100))
 
 # Chi Squared Example.
 
-qchisq(0.95, 6)
+qchisq(0.95, df = 6)
 
 
