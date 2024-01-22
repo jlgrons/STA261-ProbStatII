@@ -1,3 +1,5 @@
+### Poisson example. ###
+
 # define the objective function
 ll.poisson <- function(lambda, x) {
   sum(x) * log(lambda) - length(x) * lambda
@@ -13,6 +15,7 @@ c(opt$par, mean(data))
 curve(ll.poisson(x, data), 0,10, xlab = "lambda")
 abline(h = opt$value, v = opt$par, lty = 2, lwd = 3, col = "red")
 
+### Unfiform example. ###
 
 Ltheta <- function(theta) 1/theta^length(data)
 data <- runif(100,0,3)
