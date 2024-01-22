@@ -54,3 +54,10 @@ pnorm(1.2, mean = 1.5, sd = sqrt(1/100))
 qchisq(0.95, df = 6)
 
 
+# T Example.
+
+1 - 2 * pt(2, df = 5, lower.tail = FALSE)
+
+# F Example. 
+
+qf(0.95, df1 = 5, df2 = 9)
